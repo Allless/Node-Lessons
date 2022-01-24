@@ -12,5 +12,7 @@ console.log('basename: ', path.basename('/path/to/test.txt'));
 console.log('dirname: ', path.dirname('/path/to/test.txt'));
 console.log(
     'relative: ',
-    path.relative('path1/app/views/wow/home.html', '/app/layout/index.html')
+    path.relative('path1/app/layout/views/wow/home.html', '/layout/index.html')
 );
+
+console.log('test', path.join('/foo', 'bar', 'baz/asdf', 'quux', '..'));

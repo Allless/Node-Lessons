@@ -7,11 +7,12 @@ function f1() {
 
 async function f2() {
     console.log('f2 start');
-    await new Promise((res) =>
+    let result = await new Promise((res) =>
         setTimeout(() => {
             res('f2 promise executed');
         }, 5)
-    ).then((info) => console.log(info));
+    );
+    console.log(result);
     console.log('f2 end');
 }
 
